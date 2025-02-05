@@ -1,0 +1,61 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Global.hpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mzeggaf <mzeggaf@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/01/21 16:46:41 by zouddach          #+#    #+#             */
+/*   Updated: 2025/02/05 13:22:46 by mzeggaf          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef GLOBAL_HPP
+#define GLOBAL_HPP
+
+#include <algorithm>
+#include <climits>
+#include <iostream>
+#include <limits>
+#include <map>
+#include <queue>
+#include <string>
+#include <vector>
+#include <time.h>
+#include <cmath>
+#include <set>
+#include <sstream>
+#include <signal.h>
+#include <fstream>
+#include <istream>
+#include <ostream>
+#include <netinet/in.h>
+#include <sys/socket.h>
+#include <stdexcept>
+#include <unistd.h>
+
+using namespace std;
+
+// #include "functions.hpp"
+// #include "Route.hpp"
+// #include "Server.hpp"
+// #include "File.hpp"
+// #include "ConfigParser.hpp"
+// #include "WebServer.hpp"
+
+/* Color interface (IColor.hpp) and concrete classes (*Color.hpp) */
+#include "Interfaces/Colors/IColor.hpp"
+#include "Interfaces/Colors/RedColor.hpp"
+#include "Interfaces/Colors/GreenColor.hpp"
+#include "Interfaces/Colors/BlueColor.hpp"
+#include "Interfaces/Colors/DefaultColor.hpp"
+#include "Interfaces/Colors/BoldFont.hpp"
+
+/* Declare color instances globally */
+extern RedColor red;
+extern GreenColor green;
+extern BlueColor blue;
+extern DefaultColor def;
+extern BoldFont bold;
+
+#endif
